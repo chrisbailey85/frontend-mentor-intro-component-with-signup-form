@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </header>
+        <div class="free-trial-info">
+          <h2>Try it free 7 days then $20/mo. thereafter</h2>
+        </div>
+        <form>
+          <input
+            type="text"
+            name="name"
+            id="f-name"
+            aria-label="input frist name here "
+            placeholder="First Name"
+          />
+          <p class="vaildtion f-name-invaild">First name can not be empty</p>
+          <input
+            type="text"
+            name="name"
+            id="l-name"
+            aria-label="input last name here"
+            placeholder=" Last Name"
+          />
+          <p class="vaildtion l-name-invaild">Last name can not be empty</p>
+          <input
+            type="email"
+            id="email"
+            aria-label="input email"
+            placeholder="Email Address"
+            required
+          />
+          <p class="vaildtion email-invaild">Looks like this is not a email</p>
+          <input
+            type="password"
+            id="password"
+            aria-label="create password"
+            placeholder="Password"
+          />
+          <p class="vaildtion password-invaild">Password can not be empty</p>
+          <button
+            type="submit"
+            class="btn btn-submit-form"
+            aria-label="submit sign up"
+          >
+            Claim your free trial
+          </button>
+          <small
+            ><p>
+              By clicking the button, you are agreeing to our
+              <a href="#">Terms and Services</a>
+            </p>
+          </small>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://twitter.com/bailey_coding">Chris Bailey</a>.
+      </p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
